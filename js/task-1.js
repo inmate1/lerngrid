@@ -227,25 +227,25 @@
 // formatMinutesToTime(70);
 // console.log(formatMinutesToTime(70));
 
-console.log(NaN || 2 || undefined);
+// console.log(NaN || 2 || undefined);
 
-console.log(NaN && 2 && undefined);
+// console.log(NaN && 2 && undefined);
 
-console.log(1 && 2 && 3);
+// console.log(1 && 2 && 3);
 
-console.log((!1 && 2) || !3);
-console.log(!3);
+// console.log((!1 && 2) || !3);
+// console.log(!3);
 
-console.log(25 || (null && !3));
+// console.log(25 || (null && !3));
 
-console.log(NaN || null || !3 || undefined || 5);
+// console.log(NaN || null || !3 || undefined || 5);
 
-console.log(NaN || (null && !3 && undefined) || 5);
+// console.log(NaN || (null && !3 && undefined) || 5);
 
-console.log((5 === 5 && 3 > 1) || 5);
+// console.log((5 === 5 && 3 > 1) || 5);
 
-for (let i = 6; i > 3; i--) {}
-console.log(i);
+// for (let i = 6; i > 3; i--) {}
+// console.log(i);
 
 /////////////
 // const hamburger = 3;
@@ -274,13 +274,13 @@ console.log(i);
 // Переменная hamburger задана через let, так как const подразумевает какое-либо начальное значение. С const будет ошибка, можете проверить.
 // А без значения там undefined, напоминаю 🙂
 //////////////////////////////////
-let hamburger;
-const fries = NaN;
-const cola = 0;
-const nuggets = 2;
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
 
-if ((hamburger && cola) || (fries === 3 && nuggets)) {
-  console.log('Done!');
-}
-//       hamburger/undefined       fries === 3/false   
-console.log((hamburger && cola) || (fries === 3 && nuggets));
+// if ((hamburger && cola) || (fries === 3 && nuggets)) {
+//   console.log('Done!');
+// }
+// //       hamburger/undefined       fries === 3/false   
+// console.log((hamburger && cola) || (fries === 3 && nuggets));

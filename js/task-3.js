@@ -107,7 +107,7 @@
 // Написати функція для обчислення довжини рядка.
 // Функція отримує рядок в якості аргументу і
 // виводить в консоль повідомлення "Довжина рядка length"
-function foo(string) {
-  return `Довжина рядка: ${string.length}`;
-}
-console.log(foo("variable"));
+// function foo(string) {
+//   return `Довжина рядка: ${string.length}`;
+// }
+// console.log(foo("variable"));
