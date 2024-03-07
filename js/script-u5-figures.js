@@ -1,3 +1,4 @@
+✅
 *
 **
 ***
@@ -8,15 +9,15 @@
 // let result = ``;
 // const length = 7;
 
-// for (let i = 0; i < length; i++) {
-//   for (let j = 0; j < i; j++) {
+// for (let i = 0; i < length ; i++) {
+//   for (let j = 0; j < i +1; j++) {
 //    result += "*";
 //   }
 //   result += "\n";
 // }
 // console.log(result);
 
-(**) Задача на формирование фигуры
+✅(**) Задача на формирование фигуры
 Это одна из классических задач в программировании на формирование самых разных фигур при помощи кода. Вы спросите, а зачем это вообще нужно? Ответов несколько:
 
 Существуют реальные задачи, когда вы кодом строите геометрию, символы и другие нужные вещи. Вспомните простые электронные табло на улицах, например
@@ -35,42 +36,41 @@
  ***********
     (Подсказка: в конце фигуры есть перенос строки \n, который тоже учитывается в тестах.
         
-// const lines = 5;
-// let result = '';
-// // Проверяется именно переменная result, формируйте строку в ней
-// for (let i = 0; i <= lines; i++) {
-//     for (let j = 0; j < lines - i; j++) {
-//         result += "2";
-//     }
-//     for (let k = 0; k < 2 * i + 1; k++) {
-//         result += "*";
-//     }
-//     result += "\n";
-//     // if (i === 1) {
-//     //     break
-//     // }
-// }
+const lines = 5;
+let result = '';
+        // // Проверяется именно переменная result, формируйте строку в ней
+        
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += "2";
+    }
+    for (let k = 0; k < 2 * i + 1; k++) {
+        result += "*";
+    }
+    result += "\n";
 
-    console.log(result);
+}
+console.log(result);
 ///////////////////////////////////////////////////////////////////
-// function graphic() {
-// const lines = 8;
-// let result = "";
-// for (let i = 0; i < lines; i++) {
-//    for (let j = 0; j < lines - i; j++) {
-//        result += " ";
-//     }
-//     for (let k = 0; k < (i * 2) + 1; k++) {
-//         result += "*";
-//     }
-//     result += "\n";
-//     }
-//     return result
-// }
-// console.log(graphic());
+✅
+function graphic() {
+const lines = 8;
+let result = "";
+for (let i = 0; i < lines; i++) {
+   for (let j = 0; j < lines - i; j++) {
+       result += " ";
+    }
+    for (let k = 0; k < (i * 2) + 1; k++) {
+        result += "*";
+    }
+    result += "\n";
+    }
+    return result;
+}
+console.log(graphic());
 ///////////////////////////////////////
 
-// BORDER
+//✅ BORDER
 ********
 *      *
 *      *
@@ -86,7 +86,7 @@ function graphic() {
     for (let i = 0; i < lines; i++) {
         for (let j = 0; j < lines; j++) {
             // result += "*"; 
-            if (0 < i && i < lines - 1 && 0 < j && j < lines - 1) {
+            if (i > 0 && i < lines - 1 && j > 0 && j < lines - 1) {
                 result += " ";
             } else {
                 result += "*";
